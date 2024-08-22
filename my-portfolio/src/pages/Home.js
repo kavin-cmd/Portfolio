@@ -12,27 +12,27 @@ const skills = [
 ];
 
 const projects = [
-    {
-        title: 'Customer Churn Prediction',
-        description: 'Developed a model using Random Forests to predict customer churn and improve retention strategies.',
-        link: 'https://github.com/your-repo/customer-churn-prediction'
-    },
-    {
-        title: 'Sales Prediction',
-        description: 'Created a predictive model to forecast customer behavior and optimize sales strategies.',
-        link: 'https://github.com/your-repo/sales-prediction'
-    },
-    {
-        title: 'Credit Card Fraud Detection',
-        description: 'Built a model to detect fraudulent transactions using advanced machine learning algorithms.',
-        link: 'https://github.com/your-repo/credit-card-fraud-detection'
-    }
+    { title: 'Customer Churn Prediction', description: 'Developed a model using Random Forests to predict customer churn and improve retention strategies.', link: 'https://github.com/kavin-cmd/customer-churn-prediction' },
+    { title: 'Sales Prediction', description: 'Created a predictive model to forecast customer behavior and optimize sales strategies.', link: 'https://github.com/kavin-cmd/SalesPrediction' },
+    { title: 'Air Quality Forecasting', description: 'Developed a model to predict air quality using an advanced fusion model made of CNN and DNN.', link: 'https://github.com/kavin-cmd/Air-Quality-forecasting' },
+    { title: 'Cloud Hospital Readmissions', description: 'Analyzed hospital readmissions data using cloud-based tools to identify patterns and reduce readmission rates.', link: 'https://github.com/kavin-cmd/cloud-hospital-readmissions' }
 ];
 
 const certifications = [
-    'Software Engineer Certificate - HackerRank',
-    'SQL (Intermediate) Certificate - HackerRank',
-    'Python Data Analysis - Rice University'
+    'Software Engineer Certicate - HackerRank',
+    'SQL (Intermediate) Certicate - HackerRank',
+    'Introduction to Scripting in Python - Coursera',
+    'Python Data Analysis - Rice University',
+    'Python Data Representation - Rice University',
+    'Python Data Visualization - Rice University',
+    'Python Programming Essentials - Rice University',
+];
+
+const achievements = [
+    'Won the Galactic Problem Solver at The International Space Apps Challenge 2019 by NASA',
+    'Presented the paper on Data Preprocessing Techniques in Machine Learning ? A Review Paper at EC-ICN conference 2021',
+    'Placed 4th at UGA hacks 9 2024 StateFarm Challenge',
+    'Received the Excellence Award for Outstanding Performance - Yash Enterprise'
 ];
 
 const testimonials = [
@@ -48,23 +48,23 @@ const testimonials = [
     }
 ];
 
-const blogPosts = [
-    {
-        title: 'The Power of Data Visualization',
-        snippet: 'Data visualization is more than just creating charts; it’s about telling a story...',
-        link: '/blog/data-visualization'
-    },
-    {
-        title: 'Predictive Modeling in Business',
-        snippet: 'Predictive modeling can significantly improve business outcomes by forecasting future events...',
-        link: '/blog/predictive-modeling'
-    }
-];
+// const blogPosts = [
+//     {
+//         title: 'The Power of Data Visualization',
+//         snippet: 'Data visualization is more than just creating charts; it’s about telling a story...',
+//         link: '/blog/data-visualization'
+//     },
+//     {
+//         title: 'Predictive Modeling in Business',
+//         snippet: 'Predictive modeling can significantly improve business outcomes by forecasting future events...',
+//         link: '/blog/predictive-modeling'
+//     }
+// ];
 
 const timelineEvents = [
-    { year: '2022 - 2024', title: 'Graduated with MS in Computer Science', description: 'University of Georgia. Specialized in data analysis, machine learning, and advanced data visualization techniques.' },
+    { year: '2022 - 2024', title: 'Graduated with MS in Computer Science', description: 'University of Georgia. Specialized in Computer Science, machine learning, and advanced Artificial Intelligence Concepts. Graduated with a 3.4 GPA' },
     { year: '2023 - Present', title: 'Data Analyst at CGI', description: 'Leveraged Python, Power BI, and Apache Spark for data-driven solutions. Improved processing speed by 30% and enhanced decision-making efficiency.' },
-    { year: '2018 - 2022', title: 'Graduated with BE in Information Technology', description: 'University of Mumbai. Focused on foundational IT concepts, data structures, and algorithmic problem-solving.' },
+    { year: '2018 - 2022', title: 'Graduated with BE in Information Technology', description: 'University of Mumbai. Focused on foundational IT concepts, data structures, and algorithmic problem-solving.Graduated with a 8.17 GPA' },
     { year: '2021 - 2022', title: 'Data Analyst at Yash Enterprise', description: 'Spearheaded data analysis and predictive modeling tasks. Developed customer segmentation algorithms and improved market insights.' }
   ];
 
@@ -73,12 +73,13 @@ const Home = () => {
         <div className="home-container">
             {/* Welcome Section */}
             <header className="home-header">
-                <h1 className="home-title">Kavin Parikh</h1>
-                <h2 className="home-subtitle">Data Analyst</h2>
-                <p className="home-intro">
-                    Welcome to my portfolio! I am a Data Analyst with a Master’s degree in Computer Science from the University of Georgia. I specialize in transforming complex datasets into actionable insights using advanced data analysis techniques and machine learning models.
-                </p>
-                <Link to="/about" className="read-more-link">Read more about me</Link>
+                <div className="header-text">
+                    <h1 className="home-title">Kavin Parikh</h1>
+                    <h2 className="home-subtitle">Data Analyst</h2>
+                    <p className="home-intro">
+                        Welcome to my portfolio! I am a Data Analyst with a Master’s degree in Computer Science from the University of Georgia. I specialize in transforming complex datasets into actionable insights using advanced data analysis techniques and machine learning models...<Link to="/about" className="read-more-link">Read more</Link></p>
+                </div>
+                <img src="./kavin.jpeg" alt="Kavin Parikh" className="header-image" />
             </header>
 
             {/* Skills Section */}
@@ -137,6 +138,17 @@ const Home = () => {
                 </ul>
             </section>
 
+            <section className="achievements-section">
+                <h2 className="section-title">Achievements</h2>
+                <ul className="achievements-list">
+                    {achievements.map(achievement => (
+                        <li key={achievement} className="achievement-item">
+                            {achievement}
+                        </li>
+                    ))}
+                </ul>
+            </section>
+
             {/* Testimonials Section */}
             <section className="testimonials-section">
                 <h2 className="section-title">Testimonials</h2>
@@ -150,7 +162,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Blog/Insights Section */}
+            {/* Blog/Insights Section
             <section className="blog-section">
                 <h2 className="section-title">Latest Insights</h2>
                 <div className="blog-list">
@@ -162,7 +174,7 @@ const Home = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* Contact Section */}
             <section className="contact-section">

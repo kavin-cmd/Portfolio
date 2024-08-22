@@ -15,13 +15,18 @@ body {
     padding: 20px 0;
 }
 
-/* Header Section */
 .home-header {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 40px 20px;
     background: linear-gradient(135deg, #1E90FF, #87CEFA);
     color: white;
     border-radius: 10px;
+}
+
+.header-text {
+    max-width: 60%;
 }
 
 .home-title {
@@ -44,12 +49,18 @@ body {
 
 .read-more-link {
     font-size: 1.1em;
-    color: #ffeb3b;
+    color: #4c00ff;
     text-decoration: none;
 }
 
 .read-more-link:hover {
     text-decoration: underline;
+}
+
+.header-image {
+    max-width: 35%;
+    height: 300px;
+    border-radius: 10px;
 }
 
 /* Skills Section */
@@ -190,7 +201,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 30%;
+    flex: 1 1 calc(50.00% - 20px); /* Flex-grow, flex-shrink, and width for three cards per row */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .project-card:hover {
@@ -217,6 +229,7 @@ body {
     text-decoration: underline;
 }
 
+
 /* Certifications & Achievements */
 .certifications-section {
     margin: 40px 0;
@@ -233,6 +246,27 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievements Section */
+.achievements-section {
+    margin: 40px 0;
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievement-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    color: #333;
 }
 
 /* Testimonials Section */

@@ -1,18 +1,87 @@
-/* src/pages/About.css */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
 
 .about-container {
-    padding: 2rem;
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .about-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-container p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #1E90FF;
+}
+
+.about-introduction {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.introduction-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.introduction-text {
+    flex: 1;
+    padding-right: 30px; /* Added padding between text and image */
+}
+
+.introduction-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.section-subtitle {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1E90FF;
+}
+
+.about-professional-background,
+.about-technical-expertise,
+.about-business-acumen,
+.about-achievements,
+.about-vision,
+.about-contact {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.contact-link {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}

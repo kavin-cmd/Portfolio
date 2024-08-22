@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <h1 className="logo">My Portfolio</h1>
+        <h1 className="logo">Portfolio</h1>
         <nav>
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
