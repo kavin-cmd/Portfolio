@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Section */
+.home-header {
+    text-align: left;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1E90FF, #87CEFA);
+    color: white;
+    border-radius: 10px;
+}
+
+.home-title {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.home-subtitle {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+    color: #f1f1f1;
+}
+
+.home-intro {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+.read-more-link {
+    font-size: 1.1em;
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-section {
+    margin: 40px 0;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1E90FF;
+    text-align: left;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    width: 45%;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar-background {
+    background-color: #ddd;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.skill-bar {
+    background: linear-gradient(90deg, #1E90FF 0%, #87CEFA 100%);
+    height: 15px;
+    border-radius: 25px;
+}
+
+/* Timeline Section */
+.timeline-section {
+    margin: 40px 0;
+    position: relative;
+}
+
+.timeline-ladder {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-event {
+    position: relative;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 2px solid #1E90FF;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-event.left {
+    margin-left: 0;
+}
+
+.timeline-event.right {
+    margin-left: auto;
+}
+
+.timeline-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #1E90FF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+}
+
+.timeline-event.left .timeline-circle {
+    left: -30px;
+}
+
+.timeline-event.right .timeline-circle {
+    right: -30px;
+    left: auto;
+}
+
+.timeline-content {
+    padding-left: 40px;
+}
+
+.timeline-title {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.timeline-description {
+    margin-bottom: 0;
+    color: #777;
+}
+
+.timeline-date-range {
+    color: #333;
+    font-size: 0.9em;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+    stroke: #1E90FF;
+    stroke-width: 2;
+}
+
+/* Projects Section */
+.projects-section {
+    margin: 40px 0;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.project-description {
+    margin-bottom: 20px;
+}
+
+.project-link {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Certifications & Achievements */
+.certifications-section {
+    margin: 40px 0;
+}
+
+.certifications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certification-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    margin: 40px 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #1E90FF;
+}
+
+/* Blog Section */
+.blog-section {
+    margin: 40px 0;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.blog-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.blog-snippet {
+    margin-bottom: 15px;
+}
+
+.blog-link {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.contact-link {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
