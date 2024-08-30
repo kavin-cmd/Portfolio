@@ -35,18 +35,18 @@ const achievements = [
     'Received the Excellence Award for Outstanding Performance - Yash Enterprise'
 ];
 
-const testimonials = [
-    {
-        name: 'Vaibhav Mehta',
-        title: 'Senior Business Analyst at Yash Enterprise',
-        testimonial: 'Kavin is an exceptional Data Analyst with a keen eye for detail and a strong aptitude for data-driven solutions.'
-    },
-    {
-        name: 'Mathew Stoddard',
-        title: 'Programmer Analyst at CGI',
-        testimonial: 'Working with Kavin has been a pleasure. His ability to turn data into actionable insights is remarkable.'
-    }
-];
+// const testimonials = [
+//     {
+//         name: 'Vaibhav Mehta',
+//         title: 'Senior Business Analyst at Yash Enterprise',
+//         testimonial: 'Kavin is an exceptional Data Analyst with a keen eye for detail and a strong aptitude for data-driven solutions.'
+//     },
+//     {
+//         name: 'Mathew Stoddard',
+//         title: 'Programmer Analyst at CGI',
+//         testimonial: 'Working with Kavin has been a pleasure. His ability to turn data into actionable insights is remarkable.'
+//     }
+// ];
 
 // const blogPosts = [
 //     {
@@ -63,9 +63,9 @@ const testimonials = [
 
 const timelineEvents = [
     { year: '2022 - 2024', title: 'Graduated with MS in Computer Science', description: 'University of Georgia. Specialized in Computer Science, machine learning, and advanced Artificial Intelligence Concepts. Graduated with a 3.4 GPA' },
-    { year: '2023 - Present', title: 'Data Analyst at CGI', description: 'Leveraged Python, Power BI, and Apache Spark for data-driven solutions. Improved processing speed by 30% and enhanced decision-making efficiency.' },
+    { year: 'June 2023 - August 2024', title: 'Data Analyst at CGI', description: 'Leveraged Python, Power BI, and Apache Spark for data-driven solutions. Improved processing speed by 30% and enhanced decision-making efficiency.' },
     { year: '2018 - 2022', title: 'Graduated with BE in Information Technology', description: 'University of Mumbai. Focused on foundational IT concepts, data structures, and algorithmic problem-solving.Graduated with a 8.17 GPA' },
-    { year: '2021 - 2022', title: 'Data Analyst at Yash Enterprise', description: 'Spearheaded data analysis and predictive modeling tasks. Developed customer segmentation algorithms and improved market insights.' }
+    { year: 'September 2021 - June 2022', title: 'Data Analyst at Yash Enterprise', description: 'Spearheaded data analysis and predictive modeling tasks. Developed customer segmentation algorithms and improved market insights.' }
   ];
 
 const Home = () => {
@@ -79,7 +79,7 @@ const Home = () => {
                     <p className="home-intro">
                         Welcome to my portfolio! I am a Data Analyst with a Master’s degree in Computer Science from the University of Georgia. I specialize in transforming complex datasets into actionable insights using advanced data analysis techniques and machine learning models...<Link to="/about" className="read-more-link">Read more</Link></p>
                 </div>
-                <img src="./kavin.jpeg" alt="Kavin Parikh" className="header-image" />
+                <img src="/public" alt="Kavin Parikh" className="header-image" />
             </header>
 
             {/* Skills Section */}
@@ -149,7 +149,7 @@ const Home = () => {
                 </ul>
             </section>
 
-            {/* Testimonials Section */}
+            {/* Testimonials Section
             <section className="testimonials-section">
                 <h2 className="section-title">Testimonials</h2>
                 <div className="testimonials-list">
@@ -160,7 +160,7 @@ const Home = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* Blog/Insights Section
             <section className="blog-section">
